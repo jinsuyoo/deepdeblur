@@ -5,7 +5,7 @@ Deep Multi-scale Convolutional Neural Network for Dynamic Scene Deblurring \
 Seungjun Nah, Tae Hyun Kim, Kyoung Mu Lee \
 In CVPR 2017
 
-[arXiv] [Original Torch code]
+[arXiv](https://arxiv.org/abs/1612.02177) | [Original Torch code](https://github.com/SeungjunNah/DeepDeblur_release)
 
 **Note**: This code is for personal project. Details of the implementation may different from the original code. Should you be making use of this repository for your own research, please take it with care.
 
@@ -64,7 +64,13 @@ python test.py
 
 ## Training logs
 
-...
+*Total G loss* | *Content loss* | *Adversarial loss* | *D loss* 
+:---: | :---: | :---: | :---: |
+![total_g_loss](./assets/train_g_loss.png) | ![content_loss](./assets/train_content_loss.png) | ![adv_loss](./assets/train_adv_loss.png) | ![d_loss](./assets/train_d_loss.png)
+
+*PSNR on validation set (same as test set in this research)* |
+:---: |
+![val_psnr](./assets/val_psnr.png) |
 
 ## Acknowledgments
 
