@@ -9,9 +9,7 @@ In CVPR 2017
 
 **Note**: This code is for personal project. Details of the implementation may different from the original code. Should you be making use of this repository for your own research, please take it with care.
 
-*Blurry image* | *Deblurred image* | *Sharp image* | 
-:---: | :---: | :---: |
-![blurry_image](./assets/461_blur.png) | ![deblurred_image](./assets/461_pred.png) | ![sharp_image](./assets/461_sharp.png) |
+![intro_gif](./assets/intro.gif)
 
 ## Performance
 
@@ -52,7 +50,12 @@ pip install -r requirements.txt
 
 ### Prepare dataset
 
-...
+Download GOPRO dataset from [here](https://github.com/SeungjunNah/DeepDeblur_release).
+
+The data folder should be organized as,
+```
+/datasets/GOPRO_Large
+```
 
 ### Training model
 

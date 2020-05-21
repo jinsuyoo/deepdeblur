@@ -95,9 +95,9 @@ class GoproDataset(data.Dataset):
             blur_dir = 'blur_gamma'
         else:
             raise ValueError('incorrect blur type given..')
-
-        self.blur_list = glob.glob(os.path.join(root_dir, phase) + '/*/' + blur_dir + '/*.png')
-        self.sharp_list = glob.glob(os.path.join(root_dir, phase) + '/*/sharp/*.png')
+        
+        self.blur_list = glob.glob(os.path.join(root_dir, phase) + '/*/' + blur_dir + '/*.*')
+        self.sharp_list = glob.glob(os.path.join(root_dir, phase) + '/*/sharp/*.*')
         assert len(self.blur_list) == len(self.sharp_list)
 
         print('{} dataset contains total {:d} pair of images'.format(phase, len(self.blur_list)))
